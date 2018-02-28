@@ -57,8 +57,6 @@ Add additional notes about how to deploy this on a live system
 
 * **Christopher Coverdale** - *Initial work* - [ccdle12](https://github.com/ccdle12)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
