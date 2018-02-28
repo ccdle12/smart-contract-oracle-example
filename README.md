@@ -1,6 +1,6 @@
-# Project Title
+# Smart Contract Oracle Example
 
-One Paragraph of project description goes here
+Example project to demonstrate the use of an Oracle in a Solidity Smart Contract, calls BTC Market Cap from coinmarketcap.com and stores data in the contract
 
 ## Getting Started
 
@@ -10,69 +10,52 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
+Install Framework and Dependencies
 ```
-Give examples
+npm install -g truffle
+npm install truffle-contract
 ```
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
-
+Run testrpc in project folder
 ```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+testrpc
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+Open a new tab and run "tcm.sh" to compile and migrate contract to testrpc private chain
 ```
-Give an example
+./tcm.sh
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
+Run oracle to watch for events in the contract and fetch data
 ```
-Give an example
+node oracle.js
 ```
+
+Run client to send fetch request to contract function "updateBTCCap"
+```
+node client.js
+```
+
+And repeat Twice
+```
+node client.js 
+```
+
+After the second call on client.js, it should show the updated BTC Market Cap
+
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
 
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Christopher Coverdale** - *Initial work* - [PurpleBooth](https://github.com/ccdle12)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
