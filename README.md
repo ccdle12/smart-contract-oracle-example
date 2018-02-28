@@ -8,8 +8,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
 Install Framework and Dependencies
 ```
 npm install -g truffle
@@ -17,8 +15,6 @@ npm install truffle-contract
 ```
 
 ### Installing
-
-A step by step series of examples that tell you have to get a development env running
 
 Run testrpc in project folder
 ```
