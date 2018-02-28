@@ -11,6 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 Install Framework and Dependencies
 ```
 npm install -g truffle
+npm install -g ethereumjs-testrpc
 npm install truffle-contract
 ```
 
